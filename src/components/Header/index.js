@@ -1,7 +1,7 @@
 import {ButtonLogin, Container, Options, OptionsMenu} from './styles.js';
 import Logotipo from '../../images/LogotipoPrincipal.png';
 
-function App() {
+function Header() {
     return (
         <Container>
             <img src={Logotipo} alt="Logotipo Premier9 Media" />
@@ -30,4 +30,4 @@ function App() {
     );
 }
 
-export default App;
+export default Header;

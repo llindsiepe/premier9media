@@ -1,5 +1,9 @@
-import {AboutUs, BannerHome, ButtonPrimary, Buttons, ButtonSecondary, Card, Chip, Container, Icon, ImageBannerHome, ImageMockup, Label, Section, TextAbout, TextCard, TopicAbout, Value} from './styles.js';
+import {AboutUs, BackgroundDepoiments, BannerHome, ButtonPrimary, Buttons, ButtonSecondary, Card, Chip, Container, Depoiments, DepoimentsCarousel, Icon, ImageBannerHome, ImageMockup, Intro, Label, Meeting, Section, Services, TextAbout, TextCard, TopicAbout, Value} from './styles.js';
+import { Carousel } from '@trendyol-js/react-carousel';
+import Item from "./components/CardRating";
 import Header from './components/Header';
+import CardService from './components/CardService/index.js';
+
 import Skip from './images/skip.png';
 import ImageMockup001 from './images/imageMockup001.png';
 import iconOne from './images/iconOne.png';
@@ -8,6 +12,10 @@ import iconThree from './images/iconThree.png';
 import ChipImage from './images/chip.png'
 import ImageMockup002 from './images/mockup002.png';
 import skipTopic from './images/skipTopic.png';
+import Switch from './images/switch.png';
+import Line from './images/line.png';
+import SkipRight from './images/skipRight.png';
+import SkipLeft from './images/skipLeft.png';
 
 
 function App() {
@@ -89,6 +97,48 @@ function App() {
           </TopicAbout>
         </TextAbout>
       </AboutUs>
+
+      <Services>
+        <Intro>
+          <img src={Switch} alt="" />
+
+          <h1>Services for <b>you.</b></h1>
+          <h5>Lorem ipsum dolor sit amet consectetur. A id cras odio sed sodales. Posuere ut at sem ut sit risus tincidunt. <br />Tincidunt morbi amet senectus feugiat pellentesque mi leo urna.</h5>
+        </Intro>
+
+        <CardService icon={iconTwo} title="Link Building" text="With years of iGaming experience, we build long-term, high-quality backlinks across global markets. Our expertise spans multiple languages and global markets partnering with top-tier websites and media outlets worldwide, we strategically place content to boost visibility, drive traffic, and enhance SEO performance." />
+        <CardService icon={iconOne} title="Content Marketing" text="Content is the cornerstone of digital success. We create impactful, data-driven content that resonates with your audience and aligns with your brand's objectives. From setting clear objectives to designing a detailed content calendar, we provide end-to-end content marketing solutions." />
+        <CardService icon={iconThree} title="SEO & Brand Awareness" text="We make it possible to select the best opportunities to achieve your goals. We analyze your audience, negotiate powerful partnerships, and make your brand a household name in your industry. Notoriety & Visibility: Reach your audience with PR/Outreach campaigns expanding across diverse platforms. Time: Save time & we negotiate it faster. Create a strong bond between your Logo, brand's name, & what it represents in people's minds." />
+      </Services>
+
+      <Depoiments>
+        <Intro>
+          <img src={Switch} alt="" />
+
+          <h1>See what others are <b>saying.</b></h1>
+          <h5>Lorem ipsum dolor sit amet consectetur. A id cras odio sed sodales. Posuere ut at sem ut sit risus tincidunt. <br />Tincidunt morbi amet senectus feugiat pellentesque mi leo urna.</h5>
+        </Intro>
+
+        <BackgroundDepoiments src={Line} alt="" />
+
+        <DepoimentsCarousel>
+          <Carousel show={2} slide={2} leftArrow={<img src={SkipLeft} />} rightArrow={<img src={SkipRight} />} >
+            <Item name="Alex Kall" text="Spote has been our guide to get into organic traffic to our site and visibility on other sites through quality link building, we are pleased with the spontaneous growth"/>
+            <Item name="Veronika Mva" text="We were having a lot of difficulty achieving the volume of backlinks we needed for our products, Spote was able to help us quickly, without skimping on the quality of the content at a fair price"/>
+            <Item name="Roy Leib" text="We work with sensitive content, it's hard to find suppliers who are so quick to deliver this type of content, so I can say that I'm very satisfied with the partnership so far."/>
+          </Carousel>
+        </DepoimentsCarousel>
+      </Depoiments>
+
+      <Meeting>
+        <Intro>
+            <h1>Let’s discuss <b>your business.</b></h1>
+            <h5>We provide customized solutions tailored to your business needs,<br />exploring possibilities and creating opportunities for growth.</h5>
+
+            <h2>Schedule a <b>30-minute</b> meeting</h2>
+            <h5>In just half an hour, we’ll show you how we can help you<br />lead the digital game.</h5>
+          </Intro>
+      </Meeting>
     </Container>
   );
 }
