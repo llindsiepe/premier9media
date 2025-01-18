@@ -131,9 +131,9 @@ function App() {
 
         <DepoimentsCarousel>
           <Carousel show={2} slide={2} leftArrow={<img src={SkipLeft} />} rightArrow={<img src={SkipRight} />} >
-            <Item name="Alex Kall" text="Spote has been our guide to get into organic traffic to our site and visibility on other sites through quality link building, we are pleased with the spontaneous growth"/>
-            <Item name="Veronika Mva" text="We were having a lot of difficulty achieving the volume of backlinks we needed for our products, Spote was able to help us quickly, without skimping on the quality of the content at a fair price"/>
-            <Item name="Roy Leib" text="We work with sensitive content, it's hard to find suppliers who are so quick to deliver this type of content, so I can say that I'm very satisfied with the partnership so far."/>
+            <Item name="Emily Harper" text="The high-quality backlinks made all the difference for our website. We’re ranking higher and attracting better-quality users. I wouldn’t hesitate to recommend them, I am very satisfied." />
+            <Item name="Michael Scott" text="The partnership has been outstanding from day one. They understand the nuances of the iGaming industry, and it shows in the results. A fantastic ROI for our SEO efforts. Well done, P9 team top marks!" />
+            <Item name="Oliver Reed" text="Tapping into difficult and highly competitive markets felt daunting, but this agency made it seamless. Their strategic approach and industry knowledge have enabled us to achieve visibility where it matters most. great results across the board!" />
           </Carousel>
         </DepoimentsCarousel>
       </Depoiments>

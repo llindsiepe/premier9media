@@ -10,7 +10,7 @@
     padding: 1rem 2rem 1rem 1.5rem;
 
     h5 {
-        width: 32rem;
+        width: 34rem;
         color: rgba(255, 255, 255, 0.60);
         font-family: Montserrat;
         font-weight: 200;
