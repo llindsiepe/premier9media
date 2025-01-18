@@ -16,11 +16,19 @@ import Switch from './images/switch.png';
 import Line from './images/line.png';
 import SkipRight from './images/skipRight.png';
 import SkipLeft from './images/skipLeft.png';
+import Footer from './components/Footer/index.js';
 
 
 function App() {
+  const handleClickAnchor = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    };
+
   return (
-    <Container>
+    <Container id="home">
       <Header />
       
       <BannerHome>
@@ -28,7 +36,7 @@ function App() {
         <h5>LET’S TALK STRATEGY.</h5>
 
         <Buttons>
-            <ButtonPrimary>
+            <ButtonPrimary onClick={() => {handleClickAnchor("meeting")}}>
               <h6>Schedule a meeting</h6>
               <img src={Skip} alt="Seta apontando para o botão" />
             </ButtonPrimary>
@@ -98,7 +106,7 @@ function App() {
         </TextAbout>
       </AboutUs>
 
-      <Services>
+      <Services id="services">
         <Intro>
           <img src={Switch} alt="" />
 
@@ -130,7 +138,7 @@ function App() {
         </DepoimentsCarousel>
       </Depoiments>
 
-      <Meeting>
+      <Meeting id="meeting">
         <Intro>
             <h1>Let’s discuss <b>your business.</b></h1>
             <h5>We provide customized solutions tailored to your business needs,<br />exploring possibilities and creating opportunities for growth.</h5>
@@ -139,6 +147,8 @@ function App() {
             <h5>In just half an hour, we’ll show you how we can help you<br />lead the digital game.</h5>
           </Intro>
       </Meeting>
+
+      <Footer />
     </Container>
   );
 }
