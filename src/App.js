@@ -3,6 +3,9 @@ import { Carousel } from '@trendyol-js/react-carousel';
 import Item from "./components/CardRating";
 import Header from './components/Header';
 import CardService from './components/CardService/index.js';
+import Footer from './components/Footer/index.js';
+import {InlineWidget} from 'react-calendly'
+
 
 import Skip from './images/skip.png';
 import ImageMockup001 from './images/imageMockup001.png';
@@ -16,10 +19,13 @@ import Switch from './images/switch.png';
 import Line from './images/line.png';
 import SkipRight from './images/skipRight.png';
 import SkipLeft from './images/skipLeft.png';
-import Footer from './components/Footer/index.js';
 
 
 function App() {
+  const handleMailTo = () => {
+    window.location.href = "mailto:sales@premier9media.com";
+  };    
+
   const handleClickAnchor = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -41,7 +47,7 @@ function App() {
               <img src={Skip} alt="Seta apontando para o botão" />
             </ButtonPrimary>
 
-            <ButtonSecondary>
+            <ButtonSecondary onClick={handleMailTo}>
               <h6>Contact us</h6>
             </ButtonSecondary>
         </Buttons>
@@ -111,7 +117,7 @@ function App() {
           <img src={Switch} alt="" />
 
           <h1>Services for <b>you.</b></h1>
-          <h5>Lorem ipsum dolor sit amet consectetur. A id cras odio sed sodales. Posuere ut at sem ut sit risus tincidunt. <br />Tincidunt morbi amet senectus feugiat pellentesque mi leo urna.</h5>
+          <h5>A decade of iGaming Expertise, our winning service delivery</h5>
         </Intro>
 
         <CardService icon={iconTwo} title="Link Building" text="With years of iGaming experience, we build long-term, high-quality backlinks across global markets. Our expertise spans multiple languages and global markets partnering with top-tier websites and media outlets worldwide, we strategically place content to boost visibility, drive traffic, and enhance SEO performance." />
@@ -124,7 +130,7 @@ function App() {
           <img src={Switch} alt="" />
 
           <h1>See what others are <b>saying.</b></h1>
-          <h5>Lorem ipsum dolor sit amet consectetur. A id cras odio sed sodales. Posuere ut at sem ut sit risus tincidunt. <br />Tincidunt morbi amet senectus feugiat pellentesque mi leo urna.</h5>
+          <h5>Trusted by the Big Players, our expertise growing the SEO channel.</h5>
         </Intro>
 
         <BackgroundDepoiments src={Line} alt="" />
@@ -145,7 +151,9 @@ function App() {
 
             <h2>Schedule a <b>30-minute</b> meeting</h2>
             <h5>In just half an hour, we’ll show you how we can help you<br />lead the digital game.</h5>
-          </Intro>
+        </Intro>
+
+        <InlineWidget url="https://calendly.com/premier9media-sales/30min" />
       </Meeting>
 
       <Footer />
