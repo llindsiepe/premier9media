@@ -1,4 +1,4 @@
-import {AboutUs, BackgroundDepoiments, BannerHome, ButtonPrimary, Buttons, ButtonSecondary, Card, Chip, Container, Depoiments, DepoimentsCarousel, Icon, ImageBannerHome, ImageMockup, Intro, Label, Meeting, Section, Services, TextAbout, TextCard, TopicAbout, Value} from './styles.js';
+import {AboutUs, BackgroundDepoiments, BannerHome, ButtonPrimary, Buttons, ButtonSecondary, Calendly, Card, Chip, Container, Depoiments, DepoimentsCarousel, Icon, ImageBannerHome, ImageMockup, Intro, Label, Meeting, Section, Services, TextAbout, TextCard, TopicAbout, Value} from './styles.js';
 import { Carousel } from '@trendyol-js/react-carousel';
 import Item from "./components/CardRating";
 import Header from './components/Header';
@@ -146,14 +146,16 @@ function App() {
 
       <Meeting id="meeting">
         <Intro>
-            <h1>Let’s discuss <b>your business.</b></h1>
+            <h1>Let’s discuss <br/><b>your business.</b></h1>
             <h5>We provide customized solutions tailored to your business needs,<br />exploring possibilities and creating opportunities for growth.</h5>
 
             <h2>Schedule a <b>30-minute</b> meeting</h2>
             <h5>In just half an hour, we’ll show you how we can help you<br />lead the digital game.</h5>
         </Intro>
 
-        <InlineWidget url="https://calendly.com/premier9media-sales/30min" />
+        <Calendly>
+          <InlineWidget url="https://calendly.com/premier9media-sales/30min" />
+        </Calendly>
       </Meeting>
 
       <Footer />

@@ -9,7 +9,7 @@ export const Container = styled.div`
         width: 20%;
 
         @media (max-width: 720px) {
-        width: 8rem;
+        width: 10rem;
         }
     }
 `;

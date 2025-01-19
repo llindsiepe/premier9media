@@ -9,6 +9,12 @@
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
     padding: 1rem 2rem 1rem 1.5rem;
 
+    @media (max-width: 720px) {
+        margin-left: 1.5rem;
+        width: 18rem;
+        padding: 1rem 0rem 1rem 1.5rem;
+    }
+
     h5 {
         width: 34rem;
         color: rgba(255, 255, 255, 0.60);
@@ -17,7 +23,7 @@
         text-align: justify;
 
         @media (max-width: 720px) {
-        max-width: 10rem;
+            width: 90%;
         }
     }
 

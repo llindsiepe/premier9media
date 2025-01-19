@@ -46,6 +46,10 @@ export const BannerHome = styled.div`
         font-style: italic;
         letter-spacing: 8px;
     };
+
+    @media (max-width: 720px) {
+        height: 70vh;
+    }
 `;
 
 export const Buttons = styled.div`
@@ -106,6 +110,11 @@ export const ImageBannerHome = styled.img`
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (max-width: 720px) {
+        top: 75%;
+        width: 85%;
+    }
 `
 
 export const Section = styled.div`
@@ -116,6 +125,13 @@ export const Section = styled.div`
     padding: 2rem 10rem;
     color: #fff;
     margin-top: 14rem;
+
+    @media (max-width: 720px) {
+        margin-top: 8rem;
+        display: inline-block;
+        width: 100%;
+        padding: 2rem 20%;
+    }
 `;
 
 export const Card = styled.div`
@@ -143,7 +159,11 @@ export const Label = styled.p`
 `;
 
 export const Icon = styled.img`
-    width: 20%;
+    max-width: 20%;
+
+    @media (max-width: 720px) {
+        max-width: 10%;
+    }
 `;
 
 export const TextCard = styled.div``;
@@ -152,12 +172,22 @@ export const Chip = styled.img`
     width: 12%;
     margin-left: 80%;
     margin-top: -3rem;
+
+    @media (max-width: 720px) {
+        width: 25%;
+        margin-left: 70%;
+    }
 `;
 
 export const AboutUs = styled.div`
     display: flex;
     gap: 4rem;
     margin-top: -4rem;
+
+    @media (max-width: 720px) {
+        display: inline-block;
+        margin-top: 0rem;
+    }
 `;
 
 export const TextAbout = styled.div`
@@ -184,6 +214,15 @@ export const TextAbout = styled.div`
         font-weight: 300;
         line-height: normal;
         width: 28rem;
+
+        @media (max-width: 720px) {
+            width: 24rem;
+        }
+    }
+
+    @media (max-width: 720px) {
+        padding: 0rem 2rem;
+        margin-top: 0rem;
     }
 `;
 
@@ -202,11 +241,19 @@ export const TopicAbout = styled.div`
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+
+        @media (max-width: 720px) {
+            width: 22rem;
+        }
     }
 `;
 
 export const ImageMockup = styled.img`
     width: 45%;
+
+    @media (max-width: 720px) {
+        width: 80%;
+    }
 `;
 
 export const Services = styled.div``;
@@ -216,6 +263,12 @@ export const Intro = styled.div`
         margin-left: 50%;
         width: 2%;
         padding-top: 2rem;
+
+        @media (max-width: 720px) {
+            width: 6%;
+            margin-left: 48%;
+            padding-top: 4rem;
+        }
     }
 
     h1 {
@@ -229,6 +282,10 @@ export const Intro = styled.div`
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-style: italic;
+        }
+
+        @media (max-width: 720px) {
+            padding-top: 0rem;
         }
     };
 
@@ -258,12 +315,20 @@ export const Depoiments = styled.div`
 
 export const DepoimentsCarousel = styled.div`
     margin: 14rem 1rem 12rem 1rem;
+
+    @media (max-width: 720px) {
+        margin: 7rem 1rem 2rem 1rem;
+    }
 `;
 
 export const BackgroundDepoiments = styled.img`
     width: 100%;
     position: absolute;
     top: 220rem;
+
+    @media (max-width: 720px) {
+        top: 245rem;
+    }
 `;
 
 export const Meeting = styled.div`
@@ -271,4 +336,15 @@ export const Meeting = styled.div`
     background-color: #141414;
     margin: 16rem 0rem 0rem 0rem;
     padding: 5rem 0rem;
+
+    @media (max-width: 720px) {
+        margin: 8rem 0rem 0rem 0rem;
+        padding: 2rem 0rem;
+    }
+`;
+
+export const Calendly = styled.div`
+    // @media (max-width: 720px) {
+    //     max-width: 80%;
+    // }
 `;

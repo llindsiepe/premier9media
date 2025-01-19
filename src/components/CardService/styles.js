@@ -10,6 +10,14 @@ export const Container = styled.div`
 
     img {
         width: 3%;
+
+        @media (max-width: 720px) {
+            width: 8%;
+        }
+    }
+
+    @media (max-width: 720px) {
+        padding: 0rem 4rem;
     }
 `;
 
