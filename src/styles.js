@@ -216,7 +216,7 @@ export const TextAbout = styled.div`
         width: 28rem;
 
         @media (max-width: 720px) {
-            width: 24rem;
+            width: 22rem;
         }
     }
 
@@ -243,7 +243,7 @@ export const TopicAbout = styled.div`
         line-height: normal;
 
         @media (max-width: 720px) {
-            width: 22rem;
+            width: 20rem;
         }
     }
 `;
@@ -252,7 +252,7 @@ export const ImageMockup = styled.img`
     width: 45%;
 
     @media (max-width: 720px) {
-        width: 80%;
+        width: 70%;
     }
 `;
 
@@ -314,10 +314,10 @@ export const Depoiments = styled.div`
 `;
 
 export const DepoimentsCarousel = styled.div`
-    margin: 14rem 1rem 12rem 1rem;
+    margin: 14rem 5rem 12rem 4rem;
 
     @media (max-width: 720px) {
-        margin: 7rem 1rem 2rem 1rem;
+        margin: 7rem 4rem 2rem 4rem;
     }
 `;
 
@@ -344,7 +344,8 @@ export const Meeting = styled.div`
 `;
 
 export const Calendly = styled.div`
-    // @media (max-width: 720px) {
-    //     max-width: 80%;
-    // }
+    @media (max-width: 720px) {
+        max-width: 80%;
+        margin-left: 10%;
+    }
 `;

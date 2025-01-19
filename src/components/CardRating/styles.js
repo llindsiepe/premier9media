@@ -1,35 +1,23 @@
     import styled from "styled-components";
 
     export const Container = styled.div`
-    margin-left: 2rem;
-    margin-right: 2.5rem;
+    margin: 1rem;
     border-radius: 12px;
-    width: 36rem;
     background: #292929;
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
     padding: 1rem 2rem 1rem 1.5rem;
 
-    @media (max-width: 720px) {
-        margin-left: 1.5rem;
-        width: 18rem;
-        padding: 1rem 0rem 1rem 1.5rem;
-    }
-
     h5 {
-        width: 34rem;
-        color: rgba(255, 255, 255, 0.60);
-        font-family: Montserrat;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: Montserrat, sans-serif;
         font-weight: 200;
         text-align: justify;
-
-        @media (max-width: 720px) {
-            width: 90%;
-        }
+        width: 100%; /* Use a largura total do pai */
     }
 
     h3 {
-        color: #ffff;
-        font-family: Montserrat;
+        color: #fff;
+        font-family: Montserrat, sans-serif;
         font-weight: 500;
     }
     `;

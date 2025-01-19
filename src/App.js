@@ -1,10 +1,12 @@
 import {AboutUs, BackgroundDepoiments, BannerHome, ButtonPrimary, Buttons, ButtonSecondary, Calendly, Card, Chip, Container, Depoiments, DepoimentsCarousel, Icon, ImageBannerHome, ImageMockup, Intro, Label, Meeting, Section, Services, TextAbout, TextCard, TopicAbout, Value} from './styles.js';
-import { Carousel } from '@trendyol-js/react-carousel';
 import Item from "./components/CardRating";
 import Header from './components/Header';
 import CardService from './components/CardService/index.js';
 import Footer from './components/Footer/index.js';
-import {InlineWidget} from 'react-calendly'
+import {InlineWidget} from 'react-calendly';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 import Skip from './images/skip.png';
@@ -32,6 +34,24 @@ function App() {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 600, // Largura máxima de 600px
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        },
+      },
+    ],
+  };
 
   return (
     <Container id="home">
@@ -136,11 +156,11 @@ function App() {
         <BackgroundDepoiments src={Line} alt="" />
 
         <DepoimentsCarousel>
-          <Carousel show={2} slide={2} leftArrow={<img src={SkipLeft} />} rightArrow={<img src={SkipRight} />} >
+          <Slider {...settings}>
             <Item name="Emily Harper" text="The high-quality backlinks made all the difference for our website. We’re ranking higher and attracting better-quality users. I wouldn’t hesitate to recommend them, I am very satisfied." />
             <Item name="Michael Scott" text="The partnership has been outstanding from day one. They understand the nuances of the iGaming industry, and it shows in the results. A fantastic ROI for our SEO efforts. Well done, P9 team top marks!" />
             <Item name="Oliver Reed" text="Tapping into difficult and highly competitive markets felt daunting, but this agency made it seamless. Their strategic approach and industry knowledge have enabled us to achieve visibility where it matters most. great results across the board!" />
-          </Carousel>
+          </Slider>
         </DepoimentsCarousel>
       </Depoiments>
 
