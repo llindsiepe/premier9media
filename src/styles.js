@@ -112,7 +112,7 @@ export const ImageBannerHome = styled.img`
     transform: translate(-50%, -50%);
 
     @media (max-width: 720px) {
-        top: 75%;
+        top: 70%;
         width: 90%;
     }
 `
@@ -327,7 +327,7 @@ export const BackgroundDepoiments = styled.img`
     top: 220rem;
 
     @media (max-width: 720px) {
-        top: 265rem;
+        top: 255rem;
     }
 `;
 
