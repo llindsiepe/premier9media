@@ -243,7 +243,7 @@ export const TopicAbout = styled.div`
         line-height: normal;
 
         @media (max-width: 720px) {
-            width: 20rem;
+            width: 18rem;
         }
     }
 `;
@@ -252,7 +252,7 @@ export const ImageMockup = styled.img`
     width: 45%;
 
     @media (max-width: 720px) {
-        width: 70%;
+        width: 65%;
     }
 `;
 
@@ -327,7 +327,7 @@ export const BackgroundDepoiments = styled.img`
     top: 220rem;
 
     @media (max-width: 720px) {
-        top: 245rem;
+        top: 265rem;
     }
 `;
 
