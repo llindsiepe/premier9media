@@ -112,7 +112,7 @@ export const ImageBannerHome = styled.img`
     transform: translate(-50%, -50%);
 
     @media (max-width: 720px) {
-        top: 70%;
+        top: 85%;
         width: 90%;
     }
 `
@@ -317,7 +317,7 @@ export const DepoimentsCarousel = styled.div`
     margin: 14rem 5rem 12rem 4rem;
 
     @media (max-width: 720px) {
-        margin: 7rem 4rem 2rem 4rem;
+        margin: 5rem 4rem 2rem 4rem;
     }
 `;
 
