@@ -48,7 +48,7 @@ export const BannerHome = styled.div`
     };
 
     @media (max-width: 720px) {
-        height: 70vh;
+        height: 60vh;
     }
 `;
 
@@ -113,7 +113,7 @@ export const ImageBannerHome = styled.img`
 
     @media (max-width: 720px) {
         top: 75%;
-        width: 85%;
+        width: 90%;
     }
 `
 
